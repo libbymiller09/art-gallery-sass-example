@@ -1,0 +1,21 @@
+.header {
+  height: 6rem;
+  // width: 100vw;
+  background-color: $color-white;
+  border-bottom: 1px solid $color-grey-dark-3;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    height: 4.25rem;
+    width: 4.25rem;
+    margin-left: 2rem;
+  }
+
+  &__heading {
+    align-self: center;
+    margin-right: 40%;
+  }
+}

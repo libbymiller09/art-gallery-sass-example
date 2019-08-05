@@ -1,3 +1,16 @@
+// Colors
+$color-grey-dark-1: #333;
+$color-grey-dark-2: #777;
+$color-grey-dark-3: #999;
+
+$color-white: #fff;
+
+$color-primary: #34fcbb;
+$color-primary-light: #34fcbd3a;
+$color-primary-dark: #00a973;
+
+
+// Break points
 $bp-largest: 75em; // 1200px
 $bp-large: 62.5em; // 1000px
 $bp-medium: 50em; // 800px
@@ -19,3 +32,27 @@ html {
     font-size: 50%;
   }
 }
+
+// .container {
+//   color: $color-grey-dark-2;
+//   background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+//   background-size: cover;
+//   background-repeat: no-repeat;
+
+//   height: 100vh;
+
+//   display: grid;
+//   grid-template-rows: 80vh min-content 40vw repeat(3, min-content);  // this helps make the page repsonsive from the beginning
+//   grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] 
+//     repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+
+//   @media only  screen and (max-width: $bp-large) {
+//     grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);  
+//     grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] 
+//       repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+//   }
+
+//   @media only  screen and (max-width: $bp-medium) {
+//     grid-template-rows: 6rem calc(100vh - 6rem);  
+//   }
+// }
