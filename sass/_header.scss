@@ -19,3 +19,24 @@
     margin-right: 40%;
   }
 }
+
+.navbar-container {
+
+}
+
+.navbar {
+
+}
+
+.nav {
+
+  &__item {
+    list-style: none;
+
+  }
+
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+  }
+}

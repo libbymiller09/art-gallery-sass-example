@@ -12,12 +12,6 @@ html {
     html {
       font-size: 50%; } }
 
-.container {
-  max-width: 120rem;
-  margin: 8rem auto;
-  box-shadow: 0 2rem 4rem rgba(51, 51, 51, 0.3);
-  min-height: 50rem; }
-
 .feature {
   position: relative;
   padding: 15rem 0; }
@@ -61,13 +55,17 @@ ORDER: Base + typography > general layout + grid > page layout > components
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 2rem 4rem rgba(51, 51, 51, 0.3);
-  transition: tranform .3s; }
+  transition: transform .3s; }
   .feature-box__icon {
     font-size: 6rem;
     margin-bottom: .5rem;
     display: inline-block;
+    background-image: linear-gradient(to right, #34fcbd3a, #00a973);
+    -webkit-background-clip: text;
     background-clip: text;
     color: transparent; }
+  .feature-box:hover {
+    transform: translateY(-1.5rem) scale(1.05); }
   .feature-box__heading {
     font-size: 1.4rem;
     text-transform: uppercase; }
@@ -116,58 +114,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
   .row .col-3-of-4 {
     width: calc(3 *((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
-.sidebar-container {
-  display: flex; }
-  @media only screen and (max-width: 50em) {
-    .sidebar-container {
-      flex-direction: column; } }
-
-.sidebar {
-  background-color: #999;
-  flex: 0 0 18%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
-
-.side-nav {
-  font-size: 1.4rem;
-  list-style: none;
-  margin-top: 1.5rem; }
-  .side-nav__item {
-    position: relative; }
-    .side-nav__item:not(:last-child) {
-      margin-bottom: .5rem; }
-  .side-nav__item::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 3px;
-    background-color: #34fcbb;
-    transform: scaleY(0);
-    transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s; }
-  .side-nav__item:hover::before, .side-nav__item--active::before {
-    transform: scaleY(1);
-    width: 100%; }
-  .side-nav__item:active::before {
-    background-color: #34fcbd3a; }
-  .side-nav__link:link, .side-nav__link:visited {
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    display: block;
-    padding: 1.5rem 3rem;
-    position: relative;
-    z-index: 10;
-    display: flex;
-    align-items: center; }
-  .side-nav__icon {
-    width: 1.75rem;
-    height: 1.75rem;
-    margin-right: 2rem;
-    fill: currentColor; }
-
 .header {
   height: 6rem;
   background-color: #fff;
@@ -182,3 +128,10 @@ ORDER: Base + typography > general layout + grid > page layout > components
   .header__heading {
     align-self: center;
     margin-right: 40%; }
+
+.nav__item {
+  list-style: none; }
+
+.nav__link {
+  display: inline-block;
+  text-decoration: none; }
