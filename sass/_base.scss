@@ -1,5 +1,5 @@
 // Colors
-$color-grey-dark-1: #333;
+$color-grey-dark-1: rgba(51, 51, 51, 0.92);
 $color-grey-dark-2: #777;
 $color-grey-dark-3: #999;
 
@@ -27,6 +27,7 @@ $bp-small: 37.5em; // 600px
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
 
   @media only screen and (max-width: $bp-largest) {
     font-size: 50%;

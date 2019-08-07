@@ -1,41 +1,23 @@
 .header {
-  height: 6rem;
-  // width: 100vw;
-  background-color: $color-white;
-  border-bottom: 1px solid $color-grey-dark-3;
+  height: 10rem;
+  background-color: $color-primary-light;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   &__logo {
-    height: 4.25rem;
-    width: 4.25rem;
+    border-radius: 8px;
+    height: 5.25rem;
+    width: 5.25rem;
     margin-left: 2rem;
   }
 
   &__heading {
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: $color-primary-dark;
     align-self: center;
     margin-right: 40%;
-  }
-}
-
-.navbar-container {
-
-}
-
-.navbar {
-
-}
-
-.nav {
-
-  &__item {
-    list-style: none;
-  }
-
-  &__link {
-    display: inline-block;
-    text-decoration: none;
   }
 }

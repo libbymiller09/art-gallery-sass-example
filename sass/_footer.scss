@@ -1,6 +1,6 @@
 .footer {
   background-color: $color-primary-light;
-
+  padding-top: 4rem;
   
   &__list {
     list-style: none;
@@ -34,9 +34,10 @@
     margin-right: auto;
     margin-left: auto;
     width: 70%;
+    padding-bottom: 2rem;
 
     a {
-      color: $color-primary;
+      color: $color-primary-dark;
       text-decoration: none;
       transition: all .3s;
     }
@@ -44,9 +45,10 @@
     a:hover, 
     a:active {
       background-color: rgba($color-white, .15);
+      color: $color-primary;
       transform: translateY(-3px);
-      font-size: 1.6rem;
-      padding: 1rem;
+      font-size: 1.8rem;
+      // padding: 1rem;
     }
   }
 }
