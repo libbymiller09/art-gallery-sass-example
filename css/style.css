@@ -55,24 +55,59 @@ ORDER: Base + typography > general layout + grid > page layout > components
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 2rem 4rem rgba(51, 51, 51, 0.3);
-  transition: transform .3s; }
-  .feature-box__icon {
-    font-size: 6rem;
-    margin-bottom: .5rem;
-    display: inline-block;
-    background-image: linear-gradient(to right, #34fcbd3a, #00a973);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent; }
+  transition: transform .3s;
+  position: relative;
+  height: 52rem; }
+  .feature-box h2 {
+    font-size: 2rem; }
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.05); }
   .feature-box__heading {
     font-size: 1.4rem;
-    text-transform: uppercase; }
-  .feature-box__text {
-    font-size: 1.4rem; }
-    .feature-box__text:not(:last-child) {
-      margin-bottom: 3rem; }
+    text-transform: uppercase;
+    text-align: center;
+    color: #777;
+    position: absolute;
+    top: 5rem;
+    right: 4rem;
+    width: 75%;
+    z-index: 10; }
+  .feature-box__heading-span {
+    padding: 1rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    background-image: linear-gradient(to right bottom, rgba(52, 252, 189, 0.85), rgba(0, 169, 115, 0.85)); }
+  .feature-box__img {
+    background-size: cover;
+    height: 20rem;
+    width: 75%;
+    margin-left: 12.5%;
+    background-blend-mode: screen;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px; }
+    .feature-box__img--1 {
+      background-image: linear-gradient(to right bottom, #34fcbd3a, #00a973), url(../img/yoga.jpg);
+      -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
+    .feature-box__img--2 {
+      background-image: linear-gradient(to right bottom, #34fcbd3a, #00a973), url(../img/rocks.jpg);
+      -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+      clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%); }
+    .feature-box__img--3 {
+      background-image: linear-gradient(to right bottom, #34fcbd3a, #00a973), url(../img/candle.jpg);
+      -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); }
+  .feature-box__list {
+    padding: 3rem;
+    list-style: none;
+    width: 80%;
+    margin: 0 auto; }
+  .feature-box__item {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem; }
+    .feature-box__item:not(:last-child) {
+      border-bottom: 1px solid #777; }
 
 .row {
   max-width: 114rem;
@@ -245,3 +280,39 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .nav__link {
   display: inline-block;
   text-decoration: none; }
+
+.footer {
+  background-color: #34fcbd3a; }
+  .footer__list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 1.5rem;
+    align-items: center; }
+  .footer__link {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #777;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1.5rem;
+    display: block;
+    transition: all .3s; }
+  .footer__copyright {
+    font-size: 1.4rem;
+    color: #777;
+    margin-top: 2rem;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%; }
+    .footer__copyright a {
+      color: #34fcbb;
+      text-decoration: none;
+      transition: all .3s; }
+    .footer__copyright a:hover,
+    .footer__copyright a:active {
+      background-color: rgba(255, 255, 255, 0.15);
+      transform: translateY(-3px);
+      font-size: 1.6rem;
+      padding: 1rem; }
